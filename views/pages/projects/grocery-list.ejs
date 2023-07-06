@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script
+      src="https://kit.fontawesome.com/9e8f1b5aa1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="/styles/grocery-list.css" />
+    <link rel="icon" type="image/jpg" href="images/grocery-list-icon.jpg" />
+    <title>Grocery List</title>
+  </head>
+  <body>
+    <section>
+      <div class="alert"></div>
+      <h1>Grocery List</h1>
+      <div class="addNew">
+        <input
+          type="text"
+          name="item"
+          id="item"
+          maxlength="28"
+          placeholder="e.g. watermelon"
+        /><button type="button" id="add">Add to the list</button>
+      </div>
+      <h2 id="clearAll">Clear items</h2>
+    </section>
+    <script src="/scripts/grocery-list.js"></script>
+  </body>
+</html>
