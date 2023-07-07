@@ -64,7 +64,7 @@ a {
 }
 
 .btn-outline-primary:hover {
-  color: #107fa4;
+  color: #0e6efd;
   background: transparent;
 }
 
@@ -124,5 +124,19 @@ a {
   100% {
     background-color: blue;
     border-radius: 10%;
+  }
+}
+.logos {
+  margin-left: auto;
+  margin-bottom: auto;
+}
+.logos img {
+  max-height: 3rem;
+  max-width: 4rem;
+}
+@media (max-width: 767px) {
+  .logos img {
+    max-height: 4rem;
+    max-width: 6rem;
   }
 }/*# sourceMappingURL=index.css.map */
