@@ -1,16 +1,19 @@
-document.getElementById("aboutLink").addEventListener("click", scrollToTop);
+document
+  .getElementById("aboutLink")
+  .addEventListener("click", () => scrollToTarget("about"));
 document
   .getElementById("projectsLink")
-  .addEventListener("click", scrollToSection);
+  .addEventListener("click", () => scrollToTarget("projects"));
 
-function scrollToTop() {
+function scrollToTarget(target) {
+  const targetElement = document.getElementById(target);
+  const scrollOffset = -100;
+
+  const targetPosition = targetElement.getBoundingClientRect().top;
+  const offsetPosition = targetPosition + window.pageYOffset + scrollOffset;
+
   window.scrollTo({
-    top: 0,
+    top: offsetPosition,
     behavior: "smooth",
   });
-}
-
-function scrollToSection() {
-  const targetSection = document.getElementById("projects");
-  targetSection.scrollIntoView({ behavior: "smooth" });
 }
